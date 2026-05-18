@@ -61,10 +61,11 @@ DocuMind AI solves this through a **Retrieval-Augmented Generation (RAG)** pipel
 | 🧩 **Chunk-level Transparency** | Each indexed document shows chunk count; status indicators confirm successful ingestion |
 
 ---
-
+ 
 ## 🏗 Architecture
-
-```text
+<div align="center">
+<pre>
+  
 ┌─────────────────────────────────────────────────────────┐
 │                     User (Gradio UI)                    │
 └────────────────────┬────────────────────────────────────┘
@@ -96,11 +97,12 @@ DocuMind AI solves this through a **Retrieval-Augmented Generation (RAG)** pipel
            └──────────┬──────────┘
                       ▼
               Chat UI + Citations Panel
-```
-
+  
+</pre>
+</div>
 
 ---
-
+ 
 ## 🛠 Technology Stack
 
 | Layer | Technology | Purpose |

@@ -1,11 +1,4 @@
-# ╔══════════════════════════════════════════════════════════════╗
-# ║           DocuMind AI  —  Intelligent Document Q&A           ║
-# ║   Multi-doc · PDF/DOCX/PPTX/MD/TXT · Citations · Web fallback║
-# ╚══════════════════════════════════════════════════════════════╝
-#
-# pip install -r requirements.txt
-# Set GOOGLE_API_KEY environment variable before running.
-
+# DocuMind AI
 import os
 from pathlib import Path
 from typing import List

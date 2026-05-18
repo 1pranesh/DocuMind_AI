@@ -69,27 +69,27 @@ DocuMind AI solves this through a **Retrieval-Augmented Generation (RAG)** pipel
 ┌─────────────────────────────────────────────────────────┐
 │                     User (Gradio UI)                    │
 └────────────────────┬────────────────────────────────────┘
-                     │  Upload files / Ask question
+                        Upload files / Ask question
                      ▼
 ┌─────────────────────────────────────────────────────────┐
 │                  Document Ingestion Layer               │
 │  PyPDF · Docx2txt · python-pptx · TextLoader            │
 │         RecursiveCharacterTextSplitter (1000/200)       │
 └────────────────────┬────────────────────────────────────┘
-                     │  Text chunks + metadata
+                        Text chunks + metadata
                      ▼
 ┌─────────────────────────────────────────────────────────┐
 │               Embedding + Vector Store                  │
 │    sentence-transformers/all-MiniLM-L6-v2  →  FAISS     │
 └────────────────────┬────────────────────────────────────┘
-                     │  Top-k=4 semantic retrieval
+                        Top-k=4 semantic retrieval
                      ▼
 ┌─────────────────────────────────────────────────────────┐
 │                  RAG Chain (LangChain)                  │
 │      RetrievalQA · stuff chain · custom prompt          │
 │         Google Gemini 2.5 Flash (LLM)                   │
 └──────────┬─────────────────────┬───────────────────────┘
-           │ Answer found        │ <<<WEB_NEEDED>>> token
+             Answer found          <<<WEB_NEEDED>>> token
            ▼                     ▼
     Cited response          DuckDuckGo Search
     + source docs           + ⚠️ "Not in docs" label

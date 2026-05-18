@@ -64,8 +64,6 @@ DocuMind AI solves this through a **Retrieval-Augmented Generation (RAG)** pipel
 
 ## 🏗 Architecture
 
-<div align="center">
-
 ```text
 ┌─────────────────────────────────────────────────────────┐
 │                     User (Gradio UI)                    │
@@ -99,8 +97,6 @@ DocuMind AI solves this through a **Retrieval-Augmented Generation (RAG)** pipel
                       ▼
               Chat UI + Citations Panel
 ```
-
-</div>
 
 
 ---
